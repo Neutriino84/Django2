@@ -74,12 +74,31 @@ WSGI_APPLICATION = 'toimittajatjatuotteet2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+'''
+DATABASES = {
+    'default': {
+         'ENGINE': 'djongo',
+         "CLIENT": {
+            "name": 'SuppliersDB'
+            "host": 'mongodb+srv://Mongozure123:mongozure123@simoscluster.kk99c.azure.mongodb.net/ SuppliersDB?retryWrites=true&w=majority',
+            "username": 'Mongozure123',
+            "password": 'Mongozure123',
+            "authMechanism": "SCRAM-SHA-1",
+    }   },
+}
+
+
+'''
+
+
 
 
 # Password validation
